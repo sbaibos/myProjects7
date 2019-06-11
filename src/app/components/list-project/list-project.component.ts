@@ -11,7 +11,8 @@ import {Router} from "@angular/router";
   styleUrls: ['./list-project.component.css']
 })
 export class ListProjectComponent implements OnInit {
-  projects: any[];
+   projects: any[];
+ // projects: Object;
   //projects:ProjectModel[];
 
  
@@ -20,10 +21,14 @@ export class ListProjectComponent implements OnInit {
 
   ngOnInit() {
 
-    this.ProjectService.getProjects().subscribe((data)=>{
+    // this.ProjectService.getProjects().subscribe((data)=>{
+      // //console.log(data);
+      // this.projects = Object.values(data['records']);
+      // console.log(this.projects);
+	  
+	  this.ProjectService.getProjects().subscribe((data)=>{
       console.log(data);
-      this.projects = Object.values(data['records']);
-      console.log(this.projects);
+      this.projects = Object.values(data);
     })
     
     }
@@ -60,6 +65,9 @@ export class ListProjectComponent implements OnInit {
 	 deleteProject(project: ProjectModel): void {
       this.ProjectService.deleteProject(project.id)
         .subscribe( data => {
+           //let array = Object.values(data['records']);
+          // array = array.filter(u => u !== project);
+
           this.projects = this.projects.filter(u => u !== project);
         })
 		this.router.navigate(['list-project']);

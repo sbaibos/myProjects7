@@ -27,7 +27,7 @@ export class ProjectDetailsComponent implements OnInit {
    
     this.ProjectService.getProjects().subscribe((data)=>{
       console.log(data);
-      this.projects = Object.values(data['records']);
+      this.projects = Object.values(data);
       console.log(this.projects);
     })
 
