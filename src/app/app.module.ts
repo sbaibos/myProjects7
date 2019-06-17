@@ -20,6 +20,8 @@ import { ProjectDetailsComponent } from './components/project-details/project-de
 import { JwtInterceptor, } from './helpers/jw.interceptor';
 import { ErrorInterceptor } from './helpers/error.interceptor';
 import { fakeBackendProvider } from './helpers/fake-backend';
+import { UsersComponent } from './components/users/users.component';
+import { RegisterComponent } from './components/register/register.component';
 
 
 @NgModule({
@@ -30,7 +32,9 @@ import { fakeBackendProvider } from './helpers/fake-backend';
     EditProjectComponent,
     ListProjectComponent,
     FilterPipe,
-    ProjectDetailsComponent
+    ProjectDetailsComponent,
+    UsersComponent,
+    RegisterComponent
     
     
     

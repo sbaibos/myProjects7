@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 import { Router } from '@angular/router';
 import { AuthenticationService } from './services/authentication.service';
-import { User } from './models/user';
+import { UserModel } from './models/user';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +11,7 @@ import { User } from './models/user';
 })
 export class AppComponent {
   title = 'myProjects';
-  currentUser: User;
+  currentUser: UserModel;
 
   constructor(
     private router: Router,
