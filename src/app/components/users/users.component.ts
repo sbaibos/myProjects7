@@ -34,10 +34,7 @@ export class UsersComponent implements OnInit {
   };
 
 
-  addUser(): void {
-    this.router.navigate(['register']);
-  };
-  
+   
   EditUser(user: UserModel){
   
     window.localStorage.removeItem("userDetails");

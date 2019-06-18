@@ -7,9 +7,9 @@ export const environment = {
   baseUrl  : "http://localhost/websites/api/api",
   delete : "http://localhost/websites/api/delete",
  update:"http://localhost/websites/api/update",
- userUrl  : "http://localhost/websites/api/user_api",
- userDelete : "http://localhost/websites/api/delete_user",
- userUpdate:"http://localhost/websites/api/update_user"
+ userUrl  : "http://localhost/websites/api/user",
+ userDelete : "http://localhost/websites/api/user_delete",
+ userUpdate:"http://localhost/websites/api/user_update"
 };
 
 /*

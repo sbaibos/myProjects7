@@ -11,6 +11,6 @@ export class UserModel {
     id: number;
     username: string;
     password: string;
-    full_name: string;
+    fullName: string;
     token?: string;
 }

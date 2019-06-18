@@ -22,6 +22,7 @@ import { ErrorInterceptor } from './helpers/error.interceptor';
 import { fakeBackendProvider } from './helpers/fake-backend';
 import { UsersComponent } from './components/users/users.component';
 import { RegisterComponent } from './components/register/register.component';
+import { EditUserComponent } from './components/edit-user/edit-user.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { RegisterComponent } from './components/register/register.component';
     FilterPipe,
     ProjectDetailsComponent,
     UsersComponent,
-    RegisterComponent
+    RegisterComponent,
+    EditUserComponent
     
     
     

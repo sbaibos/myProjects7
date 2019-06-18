@@ -22,22 +22,22 @@ projects: UserModel[];
   
 
   constructor(private http: HttpClient) { }
-  baseUrl = environment.userUrl;
+  userUrl = environment.userUrl;
   update = environment.userUpdate;
   delete = environment.userDelete;
    
   getUsers(){
    //return  this.http.get('api/');
-    return this.http.get(this.baseUrl);
+    return this.http.get(this.userUrl);
    }
    
    
    getUserById(id: number) {
-    return this.http.get<UserModel>(this.baseUrl + '/' + id);
+    return this.http.get<UserModel>(this.userUrl + '/' + id);
   }
 
   createUser(user: UserModel) {
-    return this.http.post(this.baseUrl, user);
+    return this.http.post(this.userUrl, user);
   }
 
   updateUser(user: UserModel) {

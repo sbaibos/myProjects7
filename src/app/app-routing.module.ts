@@ -6,6 +6,7 @@ import {ListProjectComponent} from "./components/list-project/list-project.compo
 import {EditProjectComponent} from "./components/edit-project/edit-project.component";
 import {ProjectDetailsComponent} from "./components/project-details/project-details.component";
 import {UsersComponent} from "./components/users/users.component";
+import {EditUserComponent} from "./components/edit-user/edit-user.component";
 import { AuthGuard } from './guards/auth.guard';
 
 const routes: Routes = [
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'project-details', component: ProjectDetailsComponent },
   { path: 'edit-project', component: EditProjectComponent },
   { path: 'users', component: UsersComponent },
+  { path: 'edit-user', component: EditUserComponent },
   {path : '', component : ListProjectComponent},
   { path: '**', redirectTo: '' }
 
