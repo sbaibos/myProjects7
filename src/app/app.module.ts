@@ -24,6 +24,9 @@ import { UsersComponent } from './components/users/users.component';
 import { RegisterComponent } from './components/register/register.component';
 import { EditUserComponent } from './components/edit-user/edit-user.component';
 
+import { AuthService } from "./services/auth.service";
+import { CallbackComponent } from './components/callback/callback.component';
+
 
 @NgModule({
   declarations: [
@@ -36,7 +39,8 @@ import { EditUserComponent } from './components/edit-user/edit-user.component';
     ProjectDetailsComponent,
     UsersComponent,
     RegisterComponent,
-    EditUserComponent
+    EditUserComponent,
+    CallbackComponent
     
     
     
@@ -52,6 +56,7 @@ import { EditUserComponent } from './components/edit-user/edit-user.component';
   ],
   providers: [
     ProjectService,
+    AuthService,
     { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
     { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
 
