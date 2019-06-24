@@ -20,10 +20,10 @@ export class AuthService {
   private _expiresAt: number;
 
   auth0 = new auth0.WebAuth({
-    clientID: 'YOUR_CLIENT_ID',
-    domain: 'YOUR_DOMAIN',
+    clientID: 'EkHOD5ZU34Al05TBUWhcOObTmGaUrUrE',
+    domain: 'dev-eixz1s17.eu.auth0.com',
     responseType: 'token id_token',
-    redirectUri: 'http://localhost:3000/callback',
+    redirectUri: 'http://localhost:4200/callback',
     scope: 'openid'
   });
 
