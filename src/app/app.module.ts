@@ -26,6 +26,11 @@ import { EditUserComponent } from './components/edit-user/edit-user.component';
 
 import { AuthService } from "./services/auth.service";
 import { CallbackComponent } from './components/callback/callback.component';
+import { HomeComponent } from './components/home/home.component';
+
+import { RouterModule } from '@angular/router';
+
+import { FormsModule } from '@angular/forms'
 
 
 @NgModule({
@@ -40,7 +45,8 @@ import { CallbackComponent } from './components/callback/callback.component';
     UsersComponent,
     RegisterComponent,
     EditUserComponent,
-    CallbackComponent
+    CallbackComponent,
+    HomeComponent
     
     
     
@@ -50,7 +56,9 @@ import { CallbackComponent } from './components/callback/callback.component';
     AppRoutingModule,
   HttpClientModule,
   CustomPipesModule,
-  ReactiveFormsModule 
+  ReactiveFormsModule ,
+  RouterModule,
+  FormsModule
   
     
   ],

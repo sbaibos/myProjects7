@@ -9,9 +9,12 @@ import {UsersComponent} from "./components/users/users.component";
 import {EditUserComponent} from "./components/edit-user/edit-user.component";
 import { AuthGuard } from './guards/auth.guard';
 
+import { HomeComponent } from './components/home/home.component';
+
 const routes: Routes = [
 
-  { path: '', component: ListProjectComponent, canActivate: [AuthGuard]},
+  // { path: '', component: ListProjectComponent, canActivate: [AuthGuard]},
+  { path: '', component: HomeComponent},
  { path: 'login', component: LoginComponent },
  { path: 'list-project', component: ListProjectComponent },
   { path: 'add-project', component: AddProjectComponent },  
